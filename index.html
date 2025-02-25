@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="fetchTrends.js" defer></script>
+    <title>Fashion Trend Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="fetchTrends.js"defer></script>
 </head>
 <body>
-    <div id="trends"></div>
+    <header>
+       
+    <h1>Fashion Trend Tracker</h1>
+    <select id="category-select">
+        <option value="fashion">All Trends</option>
+        <option value="streetwear">👕 Streetwear</option>
+        <option value="luxury">💎 Luxury</option>
+        <option value="runway">🏆 Runway</option>
+        <option value="sustainable">🌿 Sustainable Fashion</option>
+    </select>
+    </header>
 
+    <main>
+        <div id="trends"></div>
+    </main>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
