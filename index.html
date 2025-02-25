@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Trend Tracker</title>
     <link rel="stylesheet" href="style.css">
-    <script src="fetchTrends.js"defer></script>
 </head>
 <body>
+
     <header>
-       
-    <h1>Fashion Trend Tracker</h1>
-    <select id="category-select">
-        <option value="fashion">All Trends</option>
-        <option value="streetwear">👕 Streetwear</option>
-        <option value="luxury">💎 Luxury</option>
-        <option value="runway">🏆 Runway</option>
-        <option value="sustainable">🌿 Sustainable Fashion</option>
-    </select>
+        
+        <h1>Fashion Trend Tracker</h1>
+        
+        <div class="controls">
+            <input type="text" id="search-input" placeholder="Search fashion trends...">
+            <button id="search-button">🔍</button>
+
+            <select id="category-select">
+                <option value="fashion">All Trends</option>
+                <option value="streetwear">👕 Streetwear</option>
+                <option value="luxury">💎 Luxury</option>
+                <option value="runway">🏆 Runway</option>
+                <option value="sustainable">🌿 Sustainable Fashion</option>
+            </select>
+        </div>
     </header>
 
     <main>
@@ -25,5 +31,6 @@
     </main>
 
     <script type="module" src="script.js"></script>
+
 </body>
 </html>

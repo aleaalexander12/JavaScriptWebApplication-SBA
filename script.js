@@ -1,6 +1,6 @@
 import { fetchFashionTrends } from "./api/fetchTrends.js";
-import { renderFashionTrends } from "./components/renderTrends.js";
-import { updatePageTitle } from "./utils/helpers.js";
+import { renderFashionTrends } from "./renderTrends.js";
+import { updatePageTitle } from "./helpers.js";
 
 /**
  * Loads fashion trends based on selected category

@@ -2,9 +2,11 @@
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    background-color: #f4f0f8;
+    background: url('assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
     margin: 0;
+    padding: 0;
 }
 
 /* Header */
@@ -17,12 +19,44 @@ header {
     text-transform: uppercase;
 }
 
-select {
-    padding: 8px;
+.logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Search and Filter Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     margin-top: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
     border-radius: 5px;
     border: none;
+    outline: none;
+}
+
+#search-input {
+    width: 250px;
+}
+
+#search-button {
+    background-color: #ff5a7b;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
     font-size: 16px;
+    border-radius: 5px;
+}
+
+#search-button:hover {
+    background-color: #e04869;
 }
 
 /* Trend Cards */
